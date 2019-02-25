@@ -21,6 +21,7 @@ public class MyController {
 	private @ResponseBody String hello(
 			@RequestParam(value = "username", required = false) String username,
 			@RequestParam(value = "password", required = false) String password) {
+		System.out.println("测试git提交！！！");
 		return "Hello " + username + ",Your password is: " + password;
 
 	}
